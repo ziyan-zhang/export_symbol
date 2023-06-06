@@ -8,4 +8,4 @@ all:
 	make -C $(KDIR) M=$(PWD) modules
 
 clean:
-	rm -rf *.o
+	rm -f *.o *.ko *.mod.c *.order *.symvers .*.cmd *.mod .*.o.d
