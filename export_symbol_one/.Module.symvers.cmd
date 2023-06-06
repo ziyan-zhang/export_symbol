@@ -1,0 +1,1 @@
+cmd_/home/zy/lab/export_symbol/export_symbol_one/Module.symvers := sed 's/ko$$/o/' /home/zy/lab/export_symbol/export_symbol_one/modules.order | scripts/mod/modpost -m -a  -o /home/zy/lab/export_symbol/export_symbol_one/Module.symvers -e -i Module.symvers   -T -

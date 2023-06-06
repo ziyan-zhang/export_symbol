@@ -1,0 +1,1 @@
+cmd_/home/zy/lab/export_symbol/export_symbol_one/export_symbol_one.mod := printf '%s\n'   export_symbol_one.o | awk '!x[$$0]++ { print("/home/zy/lab/export_symbol/export_symbol_one/"$$0) }' > /home/zy/lab/export_symbol/export_symbol_one/export_symbol_one.mod
