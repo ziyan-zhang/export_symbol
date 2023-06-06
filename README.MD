@@ -2,7 +2,7 @@
  * @Author: zy nscc ubuntu22.04 1920548152@qq.com
  * @Date: 2023-06-06 21:09:13
  * @LastEditors: zy nscc ubuntu22.04 1920548152@qq.com
- * @LastEditTime: 2023-06-06 21:25:28
+ * @LastEditTime: 2023-06-06 22:07:04
  * @FilePath: /export_symbol/README.MD
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -15,6 +15,16 @@ B模块引用A模块中的函数C，需要三点：
 1. A模块中把C函数EXPORT_SYMBOL(C)出来
 2. B模块make的时候指定引用A模块中的符号
 3. B模块中声明函数C
+
+打印效果为
+```bash
+[ 3876.650409] EXPORT_SYMBOL Module one, Init!
+[ 3876.657586] EXPORT_SYMBOL Module two, Init!
+[ 3876.657589] EXPORT_SYMBOL In Func: function_one...
+[ 3876.657590] EXPORT_SYMBOL In Func: function_two...
+[ 3876.664471] EXPORT_SYMBOL Module two, Exit!
+[ 3876.705604] EXPORT_SYMBOL Module one, Exit!
+```
 
 两个教程：
 
